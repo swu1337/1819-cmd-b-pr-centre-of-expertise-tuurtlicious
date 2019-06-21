@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <meta charset="UTF-8">
+      <meta charset="UTF-8" />
       <title>Center of Expertise</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link type="text/css" href="styles/main.css" rel="stylesheet" />
+      <script src="scripts/main.js"></script>
    </head>
    <body>
       <header class="grid-item header">
@@ -12,12 +15,29 @@
       <nav id="menu">
          <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#news">Nieuws</a></li>
+            <li><a href="#news">Nieuws
+               <span class="arrow">&#x25BC;</span>
+            </a></li>
+            <ul class="submenu">
+               <li><a href="#">Nieuwsbrief</a></li>
+            </ul>
             <li><a href="#docs">Publicaties</a></li>
             <li><a href="#events">Evenementen</a></li>
-            <li><a href="#partners">Partners</a></li>
+            <li><a href="#partners">Partners
+               <span class="arrow">&#x25BC;</span></a>
+            <ul class="submenu">
+               <li><a href="#partnerworden">Partner worden</a></li>
+            </ul>
             <!-- sub nav items -->
-            <li><a href="#aboutus">Over ons</a></li>
+            <li><a href="#aboutus">Over ons
+               <span class="arrow">&#x25BC;</span>
+            </a></li>
+            <ul class="submenu">
+               <li><a href="#">Lectoraten</a></li>
+               <li><a href="#">Kenniskringleden</a></li>
+               <li><a href="#">HHS docenten</a></li>
+               <li><a href="#">HHS studenten</a></li>
+            </ul>
             <!-- sub nav items plaatsen-->
             <li><a href="#contact">Contact</a></li>   
          </ul> 	
