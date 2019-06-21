@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-#menu a {
+.menu a {
     color: white;
     background: #9EA700;
     display: block;
@@ -18,22 +18,22 @@
     transition: background 0.4s;
 }
 
-#menu a:hover {
+.menu a:hover {
     background: #00B2CD;
 }
 
-#menu ul {
+.menu ul {
     list-style: none;
     display: flex;
 }
 
-#menu li {
+.menu li {
     width: 100%;
     text-align: center;
     position: relative;
 }
 
-#menu li:hover li {
+.menu li:hover li {
     background-color: red;
     display: block;
     top: 0px;   
@@ -50,4 +50,64 @@
     flex-direction: column;
     position: absolute;
     width: 100%;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "title title title"
+    "menu menu menu"
+    "photo photo ad1"
+    "ad2 ad3 ad4"
+    "footer footer footer"
+}
+
+.header {
+    grid-area: title;
+}
+
+.menu {
+    grid-area: menu;
+}
+
+.photo {
+    grid-area: photo;
+}
+
+.ad1 {
+    grid-area: ad1;
+}
+
+.ad2 {
+    grid-area: ad2;
+}
+
+.ad3 {
+    grid-area: ad3;
+}
+
+.ad4 {
+    grid-area: ad4;
+}
+
+.footer {
+    grid-area: footer;
+    padding: 20px;
+    background-color: #003366;
+    color: white;
+}
+
+li a {
+    color: white;
+    
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+ul {
+    list-style-type: none;
 }
